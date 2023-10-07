@@ -8,13 +8,13 @@ Customer churn, the phenomenon where customers discontinue their relationship wi
 This dataset sourced from www.mavenanalytics.io/data-playground. This dataset has 2 tables and around 7000+ records of data and 20+ columns, which includes fields such as customer demographics, location, services, and current status and much more..
 
 ## Skills Used
-CTEs (Common Table Expressions): Creating temporary result sets for complex queries.
-Temporary Tables: Storing intermediate results for further analysis.
-Window Functions: Performing calculations over specific result sets.
-Aggregate Functions: Computing summary statistics like sums, counts, etc.
-Creating Views: Creating virtual tables for simplified querying.
-Converting Data Types: Changing the data type of specific columns.
-Power Bi: For effective visualization
+CTEs (Common Table Expressions): Creating temporary result sets for complex queries.  
+Temporary Tables: Storing intermediate results for further analysis.  
+Window Functions: Performing calculations over specific result sets.  
+Aggregate Functions: Computing summary statistics like sums, counts, etc.  
+Creating Views: Creating virtual tables for simplified querying.  
+Converting Data Types: Changing the data type of specific columns.  
+Power Bi: For effective visualization  
 
 ## Data Cleaning using SQL and Excel
 1. Identified and Handled Missing Values:  
