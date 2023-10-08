@@ -7,26 +7,29 @@
  ---geographical distribution of churners
  select count(city) number_of_customers, city 
  from telecom_customer_churn$ 
+ where Customer_Status='churned'
  group by city order by count(city) desc
 
  ---gender ratio of the customers
  select count(gender) as Number, gender 
  from telecom_customer_churn$ 
+ where Customer_Status='churned'
  group by gender
 
 ---overall avg, max and min age of all the customers
 select max(age) as MaxAge, min(age) as MinAge, avg(age) as AverageAge
 from telecom_customer_churn$ 
+where Customer_Status='churned'
 
 ---avg, max and min age of the female customers
 select max(age) as Max_age_women, min(age) as min_age_women, avg(age) as avg_age_women 
 from telecom_customer_churn$ 
-where gender='female'
+where gender='female' and Customer_Status='churned'
 
 ---avg, max and min age of the male customers
 select max(age) as Max_age_men, min(age) as min_age_men, avg(age) as avg_age_men 
 from telecom_customer_churn$ 
-where gender='male'
+where gender='male' and Customer_Status='churned'
 
 ---ratio of married and unamarried customers
 select count(married) as Number, married from telecom_customer_churn$ group by married 
